@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সাইটম্যাপ | আপনার প্রতিষ্ঠানের নাম</title>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #166088;
+            --accent-color: #4fc3f7;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Hind Siliguri', 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.5rem 0 0.8rem;
+            font-size: 1.4rem;
+        }
+        
+        p, li, a {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        
+        .content-section {
+            padding: 3rem 0;
+        }
+        
+        .sitemap-section {
+            background-color: var(--light-bg);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .sitemap-columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .sitemap-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .sitemap-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .sitemap-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .content-section {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>সাইটম্যাপ</h1>
+            <p>আমাদের ওয়েবসাইটের সমস্ত পৃষ্ঠার সংক্ষিপ্ত বিবরণ</p>
+        </div>
+    </header>
+    
+    <div class="content-section">
+        <div class="container">
+            <div class="sitemap-section">
+                <h2>প্রধান বিভাগসমূহ</h2>
+                <div class="sitemap-columns">
+                    <div>
+                        <h3>প্রধান মেনু</h3>
+                        <ul class="sitemap-list">
+                            <li><a href="index.html">হোমপেজ</a></li>
+                            <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                            <li><a href="services.html">সেবাসমূহ</a></li>
+                            <li><a href="products.html">পণ্যসমূহ</a></li>
+                            <li><a href="contact.html">যোগাযোগ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>গুরুত্বপূর্ণ লিংক</h3>
+                        <ul class="sitemap-list">
+                            <li><a href="privacy-policy.html">গোপনীয়তা নীতি</a></li>
+                            <li><a href="terms-conditions.html">শর্তাবলী</a></li>
+                            <li><a href="faq.html">প্রশ্নোত্তর</a></li>
+                            <li><a href="blog.html">ব্লগ</a></li>
+                            <li><a href="careers.html">ক্যারিয়ার</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>গ্রাহক সেবা</h3>
+                        <ul class="sitemap-list">
+                            <li><a href="support.html">সহায়তা কেন্দ্র</a></li>
+                            <li><a href="returns.html">ফেরত নীতি</a></li>
+                            <li><a href="shipping.html">ডেলিভারি তথ্য</a></li>
+                            <li><a href="payment.html">পেমেন্ট অপশন</a></li>
+                            <li><a href="feedback.html">ফিডব্যাক দিন</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sitemap-section">
+                <h2>পণ্য বিভাগ</h2>
+                <div class="sitemap-columns">
+                    <div>
+                        <h3>ইলেকট্রনিক্স</h3>
+                        <ul class="sitemap-list">
+                            <li><a href="electronics/mobiles.html">মোবাইল ফোন</a></li>
+                            <li><a href="electronics/laptops.html">ল্যাপটপ</a></li>
+                            <li><a href="electronics/tv.html">টেলিভিশন</a></li>
+                            <li><a href="electronics/accessories.html">অ্যাকসেসরিজ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>গৃহস্থালি পণ্য</h3>
+                        <ul class="sitemap-list">
+                            <li><a href="home/kitchen.html">রান্নাঘরের সরঞ্জাম</a></li>
+                            <li><a href="home/furniture.html">ফার্নিচার</a></li>
+                            <li><a href="home/decor.html">সজ্জা সামগ্রী</a></li>
+                            <li><a href="home/cleaning.html">পরিচ্ছন্নতা পণ্য</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>ফ্যাশন</h3>
+                        <ul class="sitemap-list">
+                            <li><a href="fashion/men.html">পুরুষদের ফ্যাশন</a></li>
+                            <li><a href="fashion/women.html">মহিলাদের ফ্যাশন</a></li>
+                            <li><a href="fashion/kids.html">শিশুদের ফ্যাশন</a></li>
+                            <li><a href="fashion/jewelry.html">জুয়েলারি</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sitemap-section">
+                <h2>সেবা বিভাগ</h2>
+                <div class="sitemap-columns">
+                    <div>
+                        <h3>ওয়েব ডেভেলপমেন্ট</h3>
+                        <ul class="sitemap-list">
+                            <li><a href="services/web-design.html">ওয়েব ডিজাইন</a></li>
+                            <li><a href="services/web-development.html">ওয়েব ডেভেলপমেন্ট</a></li>
+                            <li><a href="services/ecommerce.html">ইকমার্স সলিউশন</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>ডিজিটাল মার্কেটিং</h3>
+                        <ul class="sitemap-list">
+                            <li><a href="services/seo.html">এসইও সার্ভিস</a></li>
+                            <li><a href="services/social-media.html">সোশ্যাল মিডিয়া মার্কেটিং</a></li>
+                            <li><a href="services/ppc.html">পিপিসি বিজ্ঞাপন</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>অন্যান্য সেবা</h3>
+                        <ul class="sitemap-list">
+                            <li><a href="services/graphic-design.html">গ্রাফিক ডিজাইন</a></li>
+                            <li><a href="services/content-writing.html">কন্টেন্ট রাইটিং</a></li>
+                            <li><a href="services/branding.html">ব্র্যান্ডিং সলিউশন</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; ২০২৫ jaHiRuL iSLaM AKASH। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+</body>
+</html>
